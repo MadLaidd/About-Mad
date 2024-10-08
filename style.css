@@ -83,6 +83,8 @@ section .container:nth-of-type(1) {
     padding: 30px 0 30px 13% ;
     justify-content: center;
     align-items: center;
+    width: auto;
+    height: auto;
 }
 section p {
     font-family: mYfont;
@@ -100,12 +102,13 @@ section p {
 .img img {
     width: 76.39%;
     height: auto;
-    padding: 65px 0 65px 0;
+    padding: 12.235% 0 12.235% 0;
 }
 section .container:nth-child(3) {
-    padding: 30px 0 30px 13% ;
+    padding: 0% 0 30px 13% ;
     justify-content: center;
     align-items: center;
+    width: auto;
 }
 section .container:nth-child(3) p:first-child {
     font-family: mYfont;
@@ -155,3 +158,45 @@ section .container:last-child img {
 }
 
 /*End R*/
+
+@media (max-width: 600px) {
+    .Wcontainer {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    section p {
+        width: auto;
+        font-size: 65%;
+    }
+    section .container:nth-child(3) p:first-child {
+        font-family: mYfont;
+        padding: 3px 0 0 0;
+        font-weight: bold;
+        font-size: 65%;
+        width: 76.39%;
+    }
+    section .container:nth-child(3) p:last-child {
+        font-family: mYfont;
+        padding: 3px 0 0 0;
+        font-weight: lighter;
+        font-size: 54%;
+        width: 76.39%;
+        padding: 20px 0 0 9%  ;
+    }
+    section .container:last-child p {
+        width: auto;
+        font-weight: lighter;
+        padding: 2% 0 0 0;
+    }
+    section .container:last-child a {
+        width: auto;
+        height: auto;
+    }
+    section .container:last-child img {
+        width: 20px;
+        height: 20px;
+        padding-top: 30%;
+    }
+}
